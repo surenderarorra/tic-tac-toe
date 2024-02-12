@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="result">
+        
+    </div>
+
+    <div class="welcome">
+        <h1>Let's Play Tick Tac Toe</h1>
+        <span>Select Game Mode: <select name="" id="game-mode" class="game-mode" onchange="gameMode()">
+            <option value="manual">Manual Player</option>
+            <option value="auto">Automatic Player</option>
+        </select></span>
+        <div class="player-name">
+            <input type="text" id="player1" class="player1" placeholder="Player 1 Name">
+            <input type="text" id="player2" class="player2" placeholder="Player 2 Name">
+        </div>
+        <button class="startBtn">Start</button>
+    </div>
+
+    <div class="game-screen">
+        <h1>Tic Tac Toe</h1>
+        <div class="names">
+            
+        </div>
+        <div class="box">
+            <span class="win" id="win"></span>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

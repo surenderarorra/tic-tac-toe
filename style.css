@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 2rem .5rem;
+    height: 25rem;
+    font-size: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 45rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 0 5rem rgba(71, 55, 55, 1);
+
+    & span {
+        font-size: 3rem;
+        & select {
+            font-size: 2rem;
+            border-radius: 2rem;
+            background: none;
+            outline: none;
+            padding: .5rem;
+            box-shadow: 0 0 3rem rgba(71, 55, 55, 0.5);
+        }
+    }
+
+    & .player-name {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+
+        & input {
+            border: none;
+            border-radius: 1rem;
+            outline: none;
+            padding: 1rem;
+            box-shadow: 0 0 3rem rgba(71, 55, 55, 0.5);
+        }
+    }
+
+    & .startBtn {
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0 3rem rgba(71, 55, 55, 0.5);
+    }
+}
+
+.game-screen {
+    display: none;
+    width: 100%;
+    height: 65rem;
+    padding: 1rem;
+    color: white;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .names span {
+        font-size: 1.8rem;
+        display: inline-block;
+        margin: .5rem;
+    }
+
+   & h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    & .box {
+        width: 35rem;
+        height: 35rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: all .5s linear;
+
+        & .btn {
+            width: 10rem;
+            height: 10rem;
+            font-size: 4rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            border: none;
+            color: black;
+            outline: none;
+            box-shadow: 0 0 1rem rgba(71, 55, 55, 0.5);
+            background: aqua;
+        }
+    }
+
+}
+
+.result {
+    width: 100%;
+    color: white;
+    height: 20rem;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-game {
+    margin-top: 2rem;
+        font-size: 3rem;
+        cursor: pointer;
+        border-radius: 1rem;
+        padding: 1rem 3rem;
+        border: none;
+        color: black;
+        outline: none;
+        box-shadow: 0 0 1rem rgba(71, 55, 55, 0.5);
+}
+
+.win {
+    position: absolute;
+    background: yellow;
+    left: 0;
+}
+
+.win1 {
+    top: 15%;
+    height: 5px;
+    width: 100%;
+}
+
+.win2 {
+    top: 50%;
+    height: 5px;
+    width: 100%;
+}
+
+.win3 {
+    top: 82%;
+    height: 5px;
+    width: 100%;
+}
+
+.win4 {
+    left: 19.5%;
+    width: 5px;
+    height: 100%;
+}
+
+.win5 {
+    left: 49.5%;
+    width: 5px;
+    height: 100%;
+}
+
+.win6 {
+    left: 79.5%;
+    width: 5px;
+    height: 100%;
+}
+
+.win7 {
+    width: 5px;
+    height: 100%;
+    left: 3%;
+    transform: skewX(43deg);
+    transform-origin: top left;
+}
+
+.win8 {
+    width: 5px;
+    height: 100%;
+    left: 95%;
+    transform: skewX(-43deg);
+    transform-origin: top left;
+}
